@@ -6,6 +6,11 @@ variable "dimensions" {
   default = []
 }
 
+variable "dimension_count" {
+  description = "The count of the dimensions variable above. This is a known Terraform issue. See https://github.com/hashicorp/terraform/issues/17421"
+  default = 0
+}
+
 variable "metric_name" {}
 
 variable "namespace" {}
