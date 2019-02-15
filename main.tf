@@ -4,7 +4,7 @@ locals {
 
 
 data "template_file" "metric" {
-  count = "${length(var.dimensions)}"
+  count = "${var.dimension_count}"
   template = "$${dims}"
 
   vars {
